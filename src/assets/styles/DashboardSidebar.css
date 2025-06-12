@@ -1,0 +1,210 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  margin: 0;
+  width: calc(20%);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar.collapsed {
+  width: max-content;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 0 32px;
+  padding: 32px 0;
+}
+
+.dataColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.dataColumn h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #404040;
+  text-align: start;
+}
+
+.dataColumn h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #808080;
+  text-align: start;
+}
+
+.buttonMenu {
+  background: #182641;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: calc(95%);
+  margin-top: 32px;
+  justify-content: center;
+  border-left: 16px solid #182641;
+  padding: 16px 0;
+  gap: 24px;
+}
+
+.pageButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-align: start;
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 0 12px 4px;
+  width: 85%;
+  gap: 16px;
+  margin: 0;
+}
+
+.buttonPage {
+  background: #1aac87;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.textPage {
+  color: #808080;
+  font-weight: 500;
+  font-size: 22px;
+  width: max-content;
+  text-align: start;
+}
+
+.footer {
+  display: flex;
+  width: max-content;
+  border-left: 16px solid #182641;
+  padding: 16px 0;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.buttonLogout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  text-align: start;
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 0 8px 8px 0;
+  padding: 16px;
+  width: max-content;
+}
+
+.buttonExit {
+  background: #182641;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.pageButton.selected {
+  background-color: #f5f5f5;
+  scale: 1.05;
+}
+
+.pageButton.selected .buttonPage {
+  background-color: #1aac87;
+  color: #fff;
+}
+
+.pageButton.selected .textPage {
+  color: #808080;
+  font-weight: 500;
+}
+
+.pageButton:hover .buttonPage,
+.pageButton:hover .textPage {
+  transition: all 0.2s ease-in-out;
+}
+
+.pageButton:hover {
+  background-color: #f5f5f5;
+  scale: 1.01;
+}
+
+.pageButton:hover .buttonPage {
+  background-color: #1aac87;
+  color: #fff;
+  scale: 1.01;
+}
+
+.pageButton:hover .textPage {
+  color: #808080;
+  scale: 1.01;
+}
+
+.buttonMenu:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #f5f5f5;
+  color: #182641;
+}
+
+.buttonLogout:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #f5f5f5;
+  scale: 1.01;
+}
+
+.buttonExit:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+  color: #182641;
+  scale: 1.01;
+}

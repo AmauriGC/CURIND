@@ -1,10 +1,13 @@
-import React from "react";
+import DashboardSidebar from "../components/DashboardSidebar";
+import "../assets/styles/Reporte.css";
 
 export default function Reportes() {
   return (
-    <div className="container">
-      <div className="selectPeriodo">
-        <h3>Periodo académico</h3>
+    <div className="pageContainer">
+      <DashboardSidebar />
+
+      <div style={{ padding: "16px" }}>
+        <h1>Periodos de evaluación</h1>
       </div>
     </div>
   );
