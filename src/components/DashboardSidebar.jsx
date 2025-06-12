@@ -13,7 +13,7 @@ export default function DashboardSidebar() {
   return (
     <div className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       <div className="sidebar-content">
-        <div className="header">
+        <div className="headerSidebar">
           {!isCollapsed && (
             <div className="dataColumn">
               <h1>Administrador</h1>
@@ -28,7 +28,7 @@ export default function DashboardSidebar() {
         </div>
 
         {!isCollapsed && (
-          <div className="body">
+          <div className="bodySidebar">
             <button
               type="button"
               className={`pageButton ${selectedButton === "Periodos de evaluación" ? "selected" : ""}`}
@@ -64,7 +64,7 @@ export default function DashboardSidebar() {
       </div>
 
       {!isCollapsed && (
-        <div className="footer">
+        <div className="footerSidebar">
           <button type="button" className="buttonLogout">
             <div className="buttonExit">
               <LogOut size={32} />

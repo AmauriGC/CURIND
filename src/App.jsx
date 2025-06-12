@@ -48,13 +48,13 @@ function App() {
 
   return (
     <div className="login">
-      <div className="head">
+      <div className="headerLogin">
         <img src={LogoUtez} alt="Logo Utez" />
         <h1>Sistema de evaluación docente</h1>
         <h3>Cursos de inducción</h3>
       </div>
 
-      <form onSubmit={handleLogin} className="body">
+      <form onSubmit={handleLogin} className="bodyLogin">
         <div className="data">
           <p>Correo</p>
           <input

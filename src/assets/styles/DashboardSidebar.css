@@ -25,7 +25,7 @@
   overflow-y: auto;
 }
 
-.header {
+.headerSidebar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,7 +68,7 @@
   display: flex;
 }
 
-.body {
+.bodySidebar {
   display: flex;
   flex-direction: column;
   width: calc(95%);
@@ -118,7 +118,7 @@
   text-align: start;
 }
 
-.footer {
+.footerSidebar {
   display: flex;
   width: max-content;
   border-left: 16px solid #182641;
@@ -155,12 +155,14 @@
 }
 
 .pageButton.selected {
-  background-color: #f5f5f5;
-  scale: 1.05;
+  background-color: #fff;
+  width: 95%;
+  height: 90px;
+  transition: all 0.2s ease-in-out;
 }
 
 .pageButton.selected .buttonPage {
-  background-color: #1aac87;
+  background-color: #182641;
   color: #fff;
 }
 
@@ -175,14 +177,12 @@
 }
 
 .pageButton:hover {
-  background-color: #f5f5f5;
-  scale: 1.01;
+  scale: 1.02;
 }
 
 .pageButton:hover .buttonPage {
   background-color: #1aac87;
-  color: #fff;
-  scale: 1.01;
+  scale: 1.02;
 }
 
 .pageButton:hover .textPage {
